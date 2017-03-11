@@ -1,3 +1,10 @@
+/*
+SAMPLE USAGE:
+------------
+
+SELECT * FROM map_extra_profile_fields('test@fake.com');
+ */
+
 CREATE FUNCTION map_extra_profile_fields (p_user_id text) RETURNS TABLE(user_id text, paper_form_template_id text, value text, label text, coord_x integer, coord_y integer)
   LANGUAGE sql
 AS $$

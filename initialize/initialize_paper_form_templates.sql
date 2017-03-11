@@ -1,5 +1,5 @@
 CREATE FUNCTION initialize_paper_form_templates () RETURNS TABLE(paper_form_template_id text, label text, owner text, coord_x integer, coord_y integer)
-	LANGUAGE sql
+  LANGUAGE sql
 AS $$
     WITH efs_base AS
     (
