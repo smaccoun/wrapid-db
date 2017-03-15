@@ -1,19 +1,19 @@
 # wrapid-db
 
-![Alt text] (./schematic/diagram.png "Optional title")
+![alt text] (./schematic/diagram.png "UML")
 
-##API
+## API
 
-###Queries
+### Queries
 
-####1. Get Extra profile
+#### 1. Get Extra profile
 
 get_extra_profile -> (user_id: TEXT) -> TABLE()
 ```
 SELECT * FROM get_extra_profile('test@email.com');
 ```
 
-####2. Get Extra Form from Mapped Profile
+#### 2. Get Extra Form from Mapped Profile
 
 map_extra_profile_fields -> (user_id: TEXT) -> TABLE()
 ```
@@ -21,9 +21,9 @@ SELECT * FROM map_extra_profile_fields('test@email.com');
 ```
 
 
-###Mutations
+### Mutations
 
-####1. Register extra
+#### 1. Register extra
 Adds extra as user and fills out some of profile fields (first name, last name)
 
 register_extra: (user_id: TEXT, password_salt: TEXT, first_name: TEXT, last_name: TEXT) -> TABLE(user_id, profile_field_id, input)
