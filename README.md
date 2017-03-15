@@ -1,6 +1,6 @@
 # wrapid-db
 
-![alt text] (./schematic/diagram.png "UML")
+![alt text](./schematic/diagram.png "Logo Title Text 1")
 
 ## API
 
